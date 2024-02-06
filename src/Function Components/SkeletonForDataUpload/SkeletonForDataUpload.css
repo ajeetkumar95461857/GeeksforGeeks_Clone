@@ -1,0 +1,20 @@
+.SkeletonForDataUpload{
+    display: grid;
+    place-items: center;
+    height:100vh;
+}
+.heading{
+    /* height:100px;
+    width:100px;
+    background-color: aqua; */
+}
+.category{
+    /* height:100px;
+    width:100px;
+    background-color: aquamarine; */
+}
+.body{
+    /* height:100px;
+    width:100px;
+    background-color: bisque; */
+}

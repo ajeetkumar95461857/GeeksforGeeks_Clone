@@ -1,0 +1,15 @@
+.Categories{
+    height:6vh;
+    border:2px solid black;
+    display: flex;
+}
+.sub-categories{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-left: 1ch;
+   padding-right: 1ch;
+}
+.sub-categories a{
+    font-size: medium;
+}

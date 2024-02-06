@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array with Objects</title>
+</head>
+<body>
+
+<h2>Add Objects to Array</h2>
+
+<!-- HTML form to input object properties -->
+<form id="objectForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+
+    <button type="button" onclick="addObject()">Add Object</button>
+</form>
+
+<!-- Display the array content -->
+<h3>Objects in Array:</h3>
+<ul id="objectList"></ul>
+
+<script>
+    // Initialize an empty array to store objects
+    const objectArray = [];
+
+    // Function to add an object to the array
+    function addObject() {
+        // Get values from the form
+        const name = document.getElementById('name').value;
+        const age = document.getElementById('age').value;
+
+        // Create an object
+        const newObject = { name, age };
+
+        // Add the object to the array
+        objectArray.push(newObject);
+
+        // Clear the form fields
+        document.getElementById('name').value = '';
+        document.getElementById('age').value = '';
+
+        // Update the displayed list
+        displayObjects();
+    }
+
+    // Function to display objects in the array
+    function displayObjects() {
+        const objectList = document.getElementById('objectList');
+        objectList.innerHTML = ''; // Clear previous content
+
+        // Loop through the array and display each object
+        objectArray.forEach((obj, index) => {
+            const listItem = document.createElement('li');
+            listItem.textContent = `Object ${index + 1}: Name - ${obj.name}, Age - ${obj.age}`;
+            objectList.appendChild(listItem);
+        });
+    }
+</script>
+
+</body>
+</html>

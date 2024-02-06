@@ -1,0 +1,42 @@
+.Body{
+    height:74vh;
+    border:2px solid red;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+}
+.top1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+.top1-content{
+    height: 20vh;
+    width: 30vw;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.top1-content-common{
+    padding-top: 2ch;
+    padding-bottom: 1ch;
+    display: flex;
+    justify-content: center;
+}
+.top2{
+    height: 30vh;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top2-content{
+    height: 30vh;
+    width: 60vw;
+    border: 2px solid black;
+    
+    display: grid;
+    place-items: center;
+}

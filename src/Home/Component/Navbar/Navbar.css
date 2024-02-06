@@ -1,0 +1,58 @@
+.container{
+    height:7vh;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    align-items: center;
+    width: 45vw;
+    box-sizing: border-box;
+}
+.tabs{
+    padding: 2ch; 	/*Relative to the width of the "0" (zero) */
+}
+a{
+    text-decoration: none;
+}
+.middle{
+    width:10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.middle img{
+    height: 4vh;
+}
+.right{
+    width:45vw;
+    display: flex;
+    justify-content: right;
+}
+.right-right{
+    width:7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-left{
+    width:11vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchIcon{
+    padding: 1ch;
+}
+.moonIcon{
+    padding: 1ch;
+}
+.googleTranslate{
+    padding: 1ch;
+}
+
+
+
+
